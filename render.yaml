@@ -1,0 +1,9 @@
+services:
+  - name: websocket-server
+    type: web
+    env: node
+    buildCommand: npm install
+    startCommand: node nodewebsocket.js
+    routes:
+      - path: /
+        port: 8080
